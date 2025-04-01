@@ -5,5 +5,7 @@
   <%= f.text_field :address %>
   <%= f.label :rating %>
   <%= f.number_field :rating %>
+  <%= f.label :opening_date %>
+  <%= f.text_field :opening_date, data: { controller: "datepicker" } %>
   <%= f.submit %>
 <% end %>

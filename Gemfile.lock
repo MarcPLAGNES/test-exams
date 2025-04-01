@@ -128,6 +128,10 @@ GEM
     ffi (1.17.1-x86_64-darwin)
     ffi (1.17.1-x86_64-linux-gnu)
     ffi (1.17.1-x86_64-linux-musl)
+    font-awesome-rails (4.7.0.9)
+      railties (>= 3.2, < 9.0)
+    font-awesome-sass (6.7.2)
+      sassc (~> 2.0)
     globalid (1.2.1)
       activesupport (>= 6.1)
     i18n (1.14.7)
@@ -318,12 +322,15 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
+  autoprefixer-rails
   bootsnap
   bootstrap (~> 5.2)
   capybara
   debug
   devise
   faker
+  font-awesome-rails
+  font-awesome-sass (~> 6.3)
   importmap-rails
   jbuilder
   pg
