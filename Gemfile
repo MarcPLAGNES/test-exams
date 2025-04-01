@@ -44,6 +44,12 @@ gem 'font-awesome-rails'
 
 gem "autoprefixer-rails"
 
+gem "ruby-openai"
+
+gem "solid_cable"
+
+gem "solid_queue"
+
 # Use Redis adapter to run Action Cable in production
 # gem "redis", ">= 4.0.1"
 
@@ -62,6 +68,7 @@ gem "bootsnap", require: false
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
   gem "debug", platforms: %i[ mri windows ]
+  gem 'dotenv-rails' # Add this gem to load .env files
 end
 
 group :development do

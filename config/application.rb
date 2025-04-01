@@ -20,6 +20,8 @@ Bundler.require(*Rails.groups)
 
 module TestExams
   class Application < Rails::Application
+
+    config.active_job.queue_adapter = :solid_queue
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.1
 
